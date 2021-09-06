@@ -1,8 +1,9 @@
 @import "./buttons.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
   background-color: #26b4bc;
-  font-family: Aital, Helvetica, sans-serif;
+  font-family: Poppins;
   margin: 0;
 }
 
@@ -11,7 +12,10 @@ body {
 }
 .wrapper {
   max-inline-size: 900px;
+  min-block-size: 100vh;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .player video {
