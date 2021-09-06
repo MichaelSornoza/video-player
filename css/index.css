@@ -1,17 +1,22 @@
 @import "./buttons.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
   background-color: #26b4bc;
-  font-family: Aital, Helvetica, sans-serif;
+  font-family: Poppins;
   margin: 0;
 }
 
 .player {
   position: relative;
 }
+
 .wrapper {
   max-inline-size: 900px;
+  min-block-size: 100vh;
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .player video {
@@ -19,6 +24,8 @@ body {
   aspect-ratio: 16/9;
   vertical-align: middle;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.75);
 }
 
 .player-title {
