@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/buttons.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="player">
+      <video id='video_player' poster='./images/poster.jpg'src="https://cdn.videvo.net/videvo_files/video/free/2020-05/large_watermarked/3d_ocean_1590675653_preview.mp4" width='500'></video>
+      <h2 class="player-title">Musica para programar</h2>
+      <div class="player-overlay">
+        <div class="player-actions">
+          <button class='button' id='backward' aria-label='Retroceder 10 segundos' title='Retroceder 10 segundos'></button>
+          <button class='button' id='play' aria-label='Reproducir el video' title='Reproducir el video'></button>
+          <button class='button' hidden id='pause' aria-label='Pausar el video' title='Pausar el video'></button>
+          <button class='button' id='forward' aria-label='Adelantar 10 segundos' title='Adelantar 10 segundos'></button>
+        </div>
+        <div class="player-progress">
+          <input type="range" id="player_progress" min='0' value='0' step='1'>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src='./js/index.js'></script>
+</body>
+</html>
